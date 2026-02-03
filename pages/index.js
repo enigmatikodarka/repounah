@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react'
 import { supabase } from '../lib/supabase'
+import Link from 'next/link'
 
 export default function Home() {
   const [archivos, setArchivos] = useState([])
@@ -37,9 +38,9 @@ export default function Home() {
       <nav className="bg-blue-900 text-white p-4 shadow-lg">
         <div className="container mx-auto flex justify-between items-center">
           <h1 className="text-2xl font-bold tracking-tighter">REPO UNAH 🇭🇳</h1>
-          <a href="/subir" className="bg-yellow-400 text-blue-900 px-4 py-2 rounded-full font-bold hover:bg-yellow-300 transition">
+          <Link href="/subir" className="bg-yellow-400 text-blue-900 px-4 py-2 rounded-full font-bold hover:bg-yellow-300 transition">
             + Subir Aporte
-          </a>
+          </Link>
         </div>
       </nav>
 

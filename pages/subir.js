@@ -1,5 +1,7 @@
 import { useState } from 'react'
 import { useRouter } from 'next/router'
+import Link from 'next/link'
+
 
 export default function Subir() {
   const router = useRouter()
@@ -90,7 +92,7 @@ export default function Subir() {
             {subiendo ? 'Subiendo...' : 'ENVIAR APORTE 🚀'}
           </button>
 
-          <a href="/" className="block text-center text-gray-500 text-sm hover:underline">Volver al inicio</a>
+          <Link href="/" className="block text-center text-gray-500 text-sm hover:underline">Volver al inicio</Link>
         </form>
       </div>
     </div>
